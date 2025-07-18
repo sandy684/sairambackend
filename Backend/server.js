@@ -22,10 +22,8 @@ connectDB();
 // Initialize Express
 const app = express();
 app.use(express.json());
-const allowedOrigins = [process.env.CLIENT_URL];
-
 app.use(cors({
-  origin: allowedOrigins,
+  origin: 'https://sairamfrontend.onrender.com',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
