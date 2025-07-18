@@ -23,7 +23,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'https://sairamfrontend.onrender.com',
+  origin: ['https://sairamfrontend.onrender.com','https://sairamtest.atriowings.in'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
